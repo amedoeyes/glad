@@ -1,0 +1,3 @@
+option('api', type: 'string')
+option('extensions', type: 'string')
+

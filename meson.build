@@ -8,6 +8,7 @@ r = run_command(
   '--out-path=./build',
   '--api=' + get_option('api'),
   '--extensions=' + get_option('extensions'),
+  get_option('reproducible') ? '--reproducible' : '',
   check: false,
 )
 if r.returncode() != 0
